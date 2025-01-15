@@ -1,7 +1,7 @@
 "use client";
 
-import Footer from "@/app/components/footer";
-import NavBar from "@/app/components/navbar";
+// import Footer from "@/app/components/footer";
+// import NavBar from "@/app/components/navbar";
 import Link from "next/link";
 import React, { useEffect, useState } from 'react';
 
@@ -97,7 +97,7 @@ const Cart = () => {
     return (
         <>
 
-            <NavBar />
+            {/* <NavBar /> */}
             <div className="container mx-auto p-4">
                 <div className="flex flex-col lg:flex-row justify-between cart-con ">
                     <div className="w-full lg:w-2/3">
@@ -188,7 +188,7 @@ const Cart = () => {
                     </div>
                 </div>
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </>
 
     );

@@ -1,7 +1,7 @@
 "use client"
 
-import Footer from "../components/footer";
-import NavBar from "../components/navbar";
+// import Footer from "../components/footer";
+// import NavBar from "../components/navbar";
 import React, { useState } from "react";
 
 const FAQPage = () => {
@@ -40,7 +40,7 @@ const FAQPage = () => {
 
     return (
         <>
-            <NavBar />
+            {/* <NavBar /> */}
             <div className="max-w-4xl mx-auto p-6">
                 <h1 className="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h1>
                 {faqs.map((faq, index) => (
@@ -49,7 +49,7 @@ const FAQPage = () => {
 
                 <br />
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </>
     );
 };

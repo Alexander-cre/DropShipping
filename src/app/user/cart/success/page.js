@@ -1,5 +1,5 @@
-import Footer from "../../components/footer";
-import NavBar from "../../components/navbar";
+// import Footer from "../../components/footer";
+// import NavBar from "../../components/navbar";
 import React  from "react";
 import { useRouter } from 'next/compat/router';
 
@@ -11,7 +11,7 @@ const checkoutOrderdetails = () => {
 
     return(
         <div>
-            <NavBar />
+            {/* <NavBar /> */}
         <div className="max-w-4xl mx-auto bg-white p-6 mt-6 shadow-md">
 
                     <div>
@@ -82,7 +82,7 @@ const checkoutOrderdetails = () => {
             <img src="https://placehold.co/600x100?text=Get+%2410+Cash+Back+%26+10%25+cash+back" alt="Get $10 Cash Back & 10% cash back" className="w-full"/>
         </div>
     </div>
-        <Footer />
+        {/* <Footer /> */}
     </div>
 )
 }

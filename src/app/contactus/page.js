@@ -1,11 +1,11 @@
-import Footer from "../components/footer";
-import NavBar from "../components/navbar";
+// import Footer from "../components/footer";
+// import NavBar from "../components/navbar";
 import React from "react";
 
 const Contactpage = () => {
     return (
         <>
-            <NavBar />
+            {/* <NavBar /> */}
             <div className="flex justify-center items-center h-screen ">
                 <div className="bg-white rounded-lg shadow-lg p-8 w-full max-w-4xl md:w-4/5 conBox">
                     <div className="flex flex-col md:flex-row">
@@ -33,7 +33,7 @@ const Contactpage = () => {
                 </div>
 
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </>
     );
 }
