@@ -1,11 +1,11 @@
 "use client"
 
-import Footer from '../app/components/footer';
-import NavBar from '../app/components/navbar';
-import ProfileSideBar from '../app/components/profilesidebar';
+import Footer from '../components/footer';
+import NavBar from '../components/navbar';
+import ProfileSideBar from '../components/profilesidebar';
 import Link from 'next/link';
 import React, { useState } from 'react';
-import '../user/profilecomponent.css' ;
+import './profilecomponent.css' ;
 const UserProfile = () => {
 
     return (

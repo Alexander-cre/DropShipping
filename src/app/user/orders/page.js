@@ -1,6 +1,6 @@
-import Footer from "../components/footer";
-import NavBar from "../components/navbar";
-import ProfileSideBar from "@/components/profilesidebar";
+import NavBar from "@/app/components/navbar";
+import Footer from "@/app/components/footer";
+import ProfileSideBar from "@/app/components/profilesidebar";
 import Link from "next/link";
 import React from "react";
 

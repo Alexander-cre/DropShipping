@@ -1,8 +1,9 @@
-import Footer from "../app/components/footer";
-import NavBar from "../app/components/navbar";
-import ProductSideBar from "./app/components/productsidebar";
+import Footer from "@/app/components/footer";
+import NavBar from "@/app/components/navbar";
+import ProductSideBar from "@/app/components/productsidebar";
+import ProfileSideBar from "@/app/components/profilesidebar";
 import Link from "next/link";
-import '../app/catalog/catalog.css';
+import '@/app/catalog/catalog.css';
 import products from "../data/products";
 
 const Catalog = () => {

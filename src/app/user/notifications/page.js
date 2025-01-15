@@ -1,5 +1,5 @@
-import Footer from "../components/footer";
-import NavBar from "../components/navbar";
+import NavBar from "@/app/components/navbar";
+import Footer from "@/app/components/footer";
 import React from "react";
 
 const Notifications = () => {
