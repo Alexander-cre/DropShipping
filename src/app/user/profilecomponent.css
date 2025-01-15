@@ -1,0 +1,96 @@
+.prosidebarIconToggle{
+    display: block !important;
+    width: 50px ;
+    height: 50px ;
+    position: absolute;
+    left: 20px ;
+}
+
+@media screen and (max-width : 800px ) {
+    
+input[type="checkbox"]:checked ~ #prosidebarMenu {
+    transform: translateX(0);
+  }
+  
+  input[type="checkbox"]:checked ~ .prosidebarIconToggle {
+    transform: translateX(80vw);
+  }
+  
+  .proInfo{
+    width: 500px !important ;
+  }
+  input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+  }
+  #prosidebarMenu{
+    position: fixed;
+    left: 0;
+    width: 50%;
+    overflow-y: scroll ;
+    height: 400px !important;
+    transform: translateX(-100%);
+    transition: transform 250ms ease-in-out;
+    text-align: center !important;
+    border-radius: 10px ;
+    box-shadow: 2px 2px 2px #141414;
+  }
+  .prosidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    height: 100% ;
+    width: 100%;
+    height: 22px;
+    display: block;
+    width: 22px;
+  }
+  .prospinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #000;
+  }
+  .prohorizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+  }
+  .prodiagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+  }
+  .prodiagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+  }
+  input[type=checkbox]:checked ~ .prosidebarIconToggle > .prohorizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+  }
+  input[type=checkbox]:checked ~ .prosidebarIconToggle > .prodiagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+  }
+  input[type=checkbox]:checked ~ .prosidebarIconToggle > .prodiagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -9px;
+  }
+}

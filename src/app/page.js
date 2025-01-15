@@ -1,101 +1,147 @@
+import Footer from "@/app/components/footer"
+import NavBar from "@/app/components/navbar";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div>
+      <NavBar />
+      <main className="">
+        <div className="bg-gray-500 text-white rounded-lg mb-4 slider">
+          <img src="" alt="/" />
+          <h1 className="text-3xl font-bold">Steal-worthy gifts under $10</h1>
+          <p>Shop white elephant</p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
+          <div className="bg-white p-4 rounded-lg shadow-lg boxoutercon">
+            <h2 className="text-xl font-bold mb-2">Shop gifts by recipient</h2>
+            <div className="grid grid-cols-2 gap-2 ">
+              <div className="innerbox mb-4">
+                <img src="https://placehold.co/100x100" alt="For him" className="w-full" />
+                <p className="text-center">For him</p>
+              </div>
+              <div className="innerbox mb-4">
+                <img src="https://placehold.co/100x100" alt="For her" className="w-full" />
+                <p className="text-center">For her</p>
+              </div>
+              <div className="innerbox mb-4">
+                <img src="https://placehold.co/100x100" alt="For kids" className="w-full" />
+                <p className="text-center">For kids</p>
+              </div>
+              <div className="innerbox mb-4">
+                <img src="https://placehold.co/100x100" alt="For teens" className="w-full" />
+                <p className="text-center">For teens</p>
+              </div>
+            </div>
+            <a href="#" className="text-blue-500 mt-2 block text-center">Shop all gifts</a>
+          </div>
+          <div className="bg-white p-4 rounded-lg shadow-lg boxoutercon">
+            <h2 className="text-xl font-bold mb-2">Makeup Kits</h2>
+            <div className="grid grid-cols-2 gap-2">
+              <div className="innerbox mb-4">
+                <img src="https://placehold.co/100x100" alt="Headsets" className="w-full" />
+                <p className="text-center">Headsets</p>
+              </div>
+              <div className="innerbox mb-4">
+                <img src="https://placehold.co/100x100" alt="Keyboards" className="w-full" />
+                <p className="text-center">Keyboards</p>
+              </div>
+              <div className="innerbox mb-4">
+                <img src="https://placehold.co/100x100" alt="Computer mice" className="w-full" />
+                <p className="text-center">Computer mice</p>
+              </div>
+              <div className="innerbox mb-4">
+                <img src="https://placehold.co/100x100" alt="Chairs" className="w-full" />
+                <p className="text-center">Chairs</p>
+              </div>
+            </div>
+            <a href="#" className="text-blue-500 mt-2 block text-center">See more</a>
+          </div>
+          <div className="bg-white p-4 rounded-lg shadow-lg boxoutercon">
+            <h2 className="text-xl font-bold mb-2">Deals in Gadgets</h2>
+            <img src="https://placehold.co/200x200" alt="Gadget Deals" className="w-full" />
+            <a href="#" className="text-blue-500 mt-2 block text-center">Shop now</a>
+          </div>
         </div>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+      <div className="p-4 Holiday">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4 ">
+          <div className="border border-2 p-4 rounded-lg holitab  shadow-lg ">
+            <div className="mainholibox">
+              <h2 className="font-bold mb-2">Top categories in Kitchen appliances</h2>
+              <img src="https://placehold.co/300x200" alt="Cooker" className="mb-2" />
+              <p>Cooker</p>
+            </div>
+            <div className="grid grid-cols-3 gap-2 mt-2 ">
+              <div className="miniholibox">
+                <img src="https://placehold.co/150x100" alt="Coffee" className="mb-1" />
+                <p>Coffee</p>
+              </div>
+              <div className="miniholibox">
+                <img src="https://placehold.co/150x100" alt="Pots and Pans" className="mb-1" />
+                <p>Pots and Pans</p>
+              </div>
+              <div className="miniholibox">
+                <img src="https://placehold.co/150x100" alt="Kettles" className="mb-1" />
+                <p>Kettles</p>
+              </div>
+            </div>
+            <a href="#" className="text-blue-500 mt-12 block">Explore all products in Kitchen</a>
+          </div>
+          <div className="border border-2 p-4 rounded-lg shadow-lg holitab gifttab">
+            <h2 className="font-bold mb-2">Get your game on</h2>
+            <img src="https://placehold.co/300x200" alt="Gaming setup" className="mb-2" />
+            <a href="#" className="text-blue-500 mt-2 block">Shop gaming</a>
+          </div>
+          <div className="border border-2 p-4 rounded-lg shadow-lg holitab gifttab">
+            <h2 className="font-bold mb-2">Small gifts under $20</h2>
+            <img src="https://placehold.co/300x200" alt="Amazon gift box" className="mb-2" />
+            <a href="#" className="text-blue-500 mt-2 block">Shop now</a>
+          </div>
+        </div>
+        <div className="border border-2 p-4 rounded-lg shadow-lg holispecial ">
+          <h2 className="font-bold mb-2">Here come Holiday Specials</h2>
+          <Link href='catalog' >
+            <b className="text-blue-500 mb-4 block">Explore now</b>
+          </Link>
+          <div className="flex overflow-x-auto space-x-4 slides">
+            <div className="flex-shrink-0 text-center roundtab">
+              <div className="tems-center justify-center mb-2">
+                <img src="https://placehold.co/100x100" alt="Holiday deals" />
+              </div>
+              <p>Holiday deals</p>
+            </div>
+            <div className="flex-shrink-0 text-center roundtab">
+              <div className="ms-center justify-center mb-2">
+                <img src="https://placehold.co/100x100" alt="Most loved deals" />
+              </div>
+              <p>Most loved deals</p>
+            </div>
+            <div className="flex-shrink-0 text-center roundtab">
+              <div className="items-center justify-center mb-2">
+                <img src="https://placehold.co/100x100" alt="Deals under $50" />
+              </div>
+              <p>Deals under $50</p>
+            </div>
+            <div className="flex-shrink-0 text-center roundtab">
+              <div className="tems-center justify-center mb-2">
+                <img src="https://placehold.co/100x100" alt="Deals on Computer" />
+              </div>
+              <p>Deals on Computer</p>
+            </div>
+            <div className="flex-shrink-0 text-center roundtab">
+              <div className="tems-center justify-center mb-2">
+                <img src="https://placehold.co/100x100" alt="Deals" />
+              </div>
+              <p>Deals</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br /><br /><br /><br /><br />
+      <Footer />
     </div>
   );
 }
