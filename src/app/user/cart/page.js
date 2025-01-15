@@ -1,7 +1,7 @@
 "use client";
 
-import Footer from "@/app/components/footer";
-import NavBar from "@/app/components/navbar";
+import Footer from "../app/components/footer";
+import NavBar from "../app/components/navbar";
 import Link from "next/link";
 import React, { useEffect, useState } from 'react';
 

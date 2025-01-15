@@ -1,5 +1,5 @@
-import Footer from "@/components/footer";
-import NavBar from "@/components/navbar";
+import Footer from "../components/footer";
+import NavBar from "../components/footer" ;
 import React  from "react";
 
 const OrderTracking = () => {

@@ -1,5 +1,5 @@
-import Footer from "@/components/footer";
-import NavBar from "@/components/navbar";
+import Footer from "../components/footer";
+import NavBar from "../components/navbar";
 import Link from "next/link";
 import React from "react";
 

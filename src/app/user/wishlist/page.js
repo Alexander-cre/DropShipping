@@ -1,8 +1,8 @@
 import React from "react";
 import Link from "next/link";
-import ProfileSideBar from "@/components/profilesidebar";
-import NavBar from "@/components/navbar";
-import Footer from "@/components/footer";
+import ProfileSideBar from "../components/profilesidebar";
+import NavBar from "../components/navbar";
+import Footer from "../components/footer";
 
 const Wishlistpage = () => {
     return (

@@ -1,13 +1,13 @@
 "use client"
 
-import Footer from "@/app/components/footer";
-import NavBar from "@/app/components/navbar";
+import Footer from "../app/components/footer";
+import NavBar from "../app/components/navbar";
 import Link from "next/link";
 import React from "react";
 import { useParams } from "next/navigation";
-import products from "@/app/data/products";
+import products from "../app/data/products";
 import { useEffect, useState } from "react";
-import { useCart } from "@/app/user/cart/context/CartContext";
+import { useCart } from "../app/user/cart/context/CartContext";
 
 
 

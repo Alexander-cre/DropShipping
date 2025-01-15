@@ -1,5 +1,5 @@
-import Footer from "@/components/footer";
-import NavBar from "@/components/navbar";
+import Footer from "../components/footer";
+import NavBar from "../components/navbar";
 import React  from "react";
 import { useRouter } from 'next/compat/router';
 
