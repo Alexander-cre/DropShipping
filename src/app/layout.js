@@ -1,6 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { CartProvider } from "./user/cart/context/CartContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,10 +23,8 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <CartProvider>
         <script src="https://cdn.jsdelivr.net/npm/react-paystack@latest/dist/react-paystack.umd.js"></script>
         {children}
-        </CartProvider>
       </body>
     </html>
   );
