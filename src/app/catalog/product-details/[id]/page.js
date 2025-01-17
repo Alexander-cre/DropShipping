@@ -7,7 +7,7 @@ import React from "react";
 import { useParams } from "next/navigation";
 import products from "@/app/data/products";
 import { useEffect, useState } from "react";
-import { useCart } from "@/app/user/cart/context/CartContext";
+import { useCart } from "@/app/layout";
 
 
 

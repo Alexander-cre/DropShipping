@@ -4,6 +4,7 @@
 // import NavBar from "@/app/components/navbar";
 import Link from "next/link";
 import React, { useEffect, useState } from 'react';
+import { PaystackButton } from 'react-paystack';
 
 
 const Cart = () => {
@@ -11,7 +12,8 @@ const Cart = () => {
 
     const [cartItems, setCartItems] = useState([]);
     const [deliveryOption, setDeliveryOption] = useState('free'); // Default delivery option
-    const [totalPrice, setTotalPrice] = useState(0);
+    const [totalPrice, setTotalPrice] = useState(0);    
+    const [publicKey, setPublicKey] = useState('pk_test_9a3e161cda021278e5ada93f903282917dc43254'); // Replace with your Paystack public key
 
     // Delivery fees
     const deliveryFees = {
@@ -85,6 +87,21 @@ const Cart = () => {
     useEffect(() => {
         setTotalPrice(calculateTotalPrice());
     }, [cartItems, deliveryOption]); // Dependencies to recalculate total price
+
+    // Paystack
+    const componentProps = {
+        email: "customer-email@example.com", // Customer's email
+        amount: totalPrice * 100, // Amount in kobo
+        publicKey: publicKey,
+        text: "Proceed to checkout ",
+        onSuccess: (reference) => {
+            // Redirect to success page with query parameters
+            console.log("Successful!!!")
+        },
+        onClose: () => {
+            alert("Payment closed");
+        },
+    };
 
     const handleSave = (e) => {
         e.preventDefault();
@@ -179,7 +196,7 @@ const Cart = () => {
                                 <p className="text-lg font-semibold">N {calculateTotalPrice()}</p>
                             </div>
                                 <button className="w-full px-4 py-2 bg-black text-white rounded-lg mb-4">
-                                PaystackButton
+                                <PaystackButton {...componentProps} />
                                 </button>
                             <Link href={'/'}>
                                 <button className="w-full px-4 py-2 bg-gray-200 rounded-lg">Continue shopping</button>
