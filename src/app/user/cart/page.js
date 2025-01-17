@@ -103,11 +103,12 @@ const Cart = () => {
         },
     };
 
-    const handleSave = (e) => {
-        e.preventDefault();
-        localStorage.setItem("referenceDetails", reference);
-        // Redirect to success page after saving
-      };
+    // const handleSave = (e) => {
+    //     e.preventDefault();
+    //     localStorage.setItem("referenceDetails", reference);
+    //     // Redirect to success page after saving
+        
+    //   };
 
 
     return (
