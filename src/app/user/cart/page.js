@@ -107,7 +107,6 @@ const Cart = () => {
         e.preventDefault();
         localStorage.setItem("referenceDetails", reference);
         // Redirect to success page after saving
-        window.location.href = "/success";
       };
 
 
