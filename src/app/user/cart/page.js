@@ -101,14 +101,7 @@ const Cart = () => {
         onClose: () => {
             alert("Payment closed");
         },
-    };
-
-    // const handleSave = (e) => {
-    //     e.preventDefault();
-    //     localStorage.setItem("referenceDetails", reference);
-    //     // Redirect to success page after saving
-        
-    //   };
+    }
 
 
     return (
