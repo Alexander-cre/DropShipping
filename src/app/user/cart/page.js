@@ -21,18 +21,21 @@ const Cart = () => {
         express: 9.99,
     };
     // Function to load items from local storage
+        // Load items from local storage
     const loadCartItems = () => {
-        const items = Object.keys(localStorage).map(key => {
-            try {
-                const item = JSON.parse(localStorage.getItem(key));
-                return item; // Return the parsed item
-            } catch (error) {
-                console.error(`Error parsing item with key "${key}":`, error);
-                return null; // Return null for invalid items
-            }
-        }).filter(item => item !== null); // Filter out null items
+        if (typeof window !== 'undefined') { // Check if window is defined
+            const items = Object.keys(localStorage).map(key => {
+                try {
+                    const item = JSON.parse(localStorage.getItem(key));
+                    return item; // Return the parsed item
+                } catch (error) {
+                    console.error(`Error parsing item with key "${key}":`, error);
+                    return null; // Return null for invalid items
+                }
+            }).filter(item => item !== null); // Filter out null items
 
-        setCartItems(items);
+            setCartItems(items);
+        }
     };
 
     // Function to remove an item from local storage
